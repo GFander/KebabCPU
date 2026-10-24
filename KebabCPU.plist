@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Reference personality for the KebabCPU IOCPU driver. -->
+<plist version="1.0">
+<dict>
+	<key>IOClass</key>
+	<string>KebabCPU</string>
+	<key>IOProviderClass</key>
+	<string>IOPlatformExpertDevice</string>
+	<key>IONameMatch</key>
+	<string>oneplus,kebab</string>
+	<key>IOProbeScore</key>
+	<integer>9000</integer>
+</dict>
+</plist>
