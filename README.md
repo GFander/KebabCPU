@@ -28,5 +28,7 @@ SM8250 puts the core number in **Aff1**, not Aff0.
 
 ## Status
 
-The kernel builds and the driver is linked; secondary bring-up is untested on
-hardware yet because the first images run with `cpus=1`.
+The kernel builds and the driver links, but it has not run on hardware yet: the
+first images stop in `arm_init` before IOKit starts, and they keep `cpus=1` so
+the boot CPU comes up alone. The MPIDR handling this driver needs (Qualcomm puts
+the core number in Aff1, not Aff0) is in place for the day the boot reaches it.
